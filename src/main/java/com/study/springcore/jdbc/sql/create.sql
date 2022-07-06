@@ -1,3 +1,8 @@
+-- 建立資料表
+CREATE DATABASE finweb IF NOT EXISTS finweb    
+DEFAULT CHARACTER SET utf8       
+COLLATE utf_general_ci;
+
 -- 建立 Emp 資料表
 create table if not exists emp (
 	eid int not null auto_increment, -- 主鍵(自動產生序號:1, 2, 3 過號不返回)
