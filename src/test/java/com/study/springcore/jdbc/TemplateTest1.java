@@ -12,6 +12,7 @@ public class TemplateTest1 {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("jdbc-config.xml");
+		//ApplicationContext ctx = new AnnotationConfigApplicationContext(com.study.springcore.jdbc.SpringConfig.class);
 		EmpDao empDao = ctx.getBean("empDao", EmpDao.class);
 		System.out.println(empDao.queryAll());
 		// 如何取得 eid=2 的員工姓名 ? (請使用 java 8 stream)
