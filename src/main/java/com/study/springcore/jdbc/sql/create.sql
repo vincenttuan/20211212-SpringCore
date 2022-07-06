@@ -1,7 +1,6 @@
 -- 建立資料表
-CREATE DATABASE finweb IF NOT EXISTS finweb    
-DEFAULT CHARACTER SET utf8       
-COLLATE utf_general_ci;
+CREATE DATABASE finweb 
+CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- 建立 Emp 資料表
 create table if not exists emp (
