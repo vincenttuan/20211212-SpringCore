@@ -22,6 +22,20 @@ create table if not exists job (
 
 -- 由上述可知，一個 emp 對應多個 job，一個 job 對應一個 emp
 
+insert into emp(ename, age) values ('A01', 21);
+insert into emp(ename, age) values ('A02', 22);
+insert into emp(ename, age) values ('A03', 23);
+insert into emp(ename, age) values ('A04', 24);
+insert into emp(ename, age) values ('A05', 25);
+insert into emp(ename, age) values ('A06', 26);
+insert into emp(ename, age) values ('A07', 27);
+insert into emp(ename, age) values ('A08', 28);
+insert into emp(ename, age) values ('A09', 29);
+insert into emp(ename, age) values ('A10', 30);
+insert into emp(ename, age) values ('A11', 31);
+insert into emp(ename, age) values ('A12', 32);
+insert into emp(ename, age) values ('A13', 33);
+
 insert into job(jname, eid) values ('report', 1);
 insert into job(jname, eid) values ('coding', 3);
 insert into job(jname, eid) values ('jobA', 3);
