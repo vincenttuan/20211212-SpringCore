@@ -1,4 +1,4 @@
-package com.spring.core.session06;
+package com.study.springcore.jdbc;
 
 import javax.sql.DataSource;
 
