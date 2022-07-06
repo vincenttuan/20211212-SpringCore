@@ -9,7 +9,7 @@ create table if not exists emp (
 	age int, -- 員工年齡
 	createtime timestamp default current_timestamp, -- 建檔時間
 	primary key(eid)
-)
+);
 
 -- 建立 Job 資料表
 create table if not exists job (
@@ -18,7 +18,7 @@ create table if not exists job (
 	eid int, -- 員工 id
 	primary key(jid),
 	foreign key(eid) references emp(eid) -- 外鍵約束/關聯
-)
+);
 
 -- 由上述可知，一個 emp 對應多個 job，一個 job 對應一個 emp
 
